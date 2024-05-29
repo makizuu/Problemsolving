@@ -1,4 +1,5 @@
 #asks for a number and then prints out a list of all the divisors of that number
+
 nro = int(input("Give me a number: "))
 empty_list = []
 for num in list(range(1,nro+1)):
