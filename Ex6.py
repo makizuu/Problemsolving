@@ -1,4 +1,5 @@
 test_word = input("Give me a word: ")
+test_word = str(test_word)
 palindrome = test_word[::-1]
 
 if test_word == palindrome:
