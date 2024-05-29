@@ -1,3 +1,4 @@
+#tests if palindrome
 test_word = input("Give me a word: ")
 test_word = str(test_word)
 palindrome = test_word[::-1]

@@ -14,6 +14,7 @@ for i in a:
 
 print(empty_list)
 """
+#finds common numbers in random number lists and prints them
 import random
 
 a = random.sample(range(1, 100), 10)
