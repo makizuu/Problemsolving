@@ -1,2 +1,2 @@
 # Problemsolving
-Solving Project Euler problems
+Solving Project Euler and other Python problems
