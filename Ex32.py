@@ -11,6 +11,67 @@ def randomize_word():
     #picks a random word from the list
     return random.choice(words)
 
+def show_dude(guesses_left):
+    states = [
+        """
+           ------
+           |    |
+           |    O
+           |   \\|/
+           |    |
+           |   / \\
+        """,
+        """
+           ------
+           |    |
+           |    O
+           |   \\|/
+           |    |
+           |   / 
+        """,
+        """
+           ------
+           |    |
+           |    O
+           |   \\|/
+           |    |
+           |    
+        """,
+        """
+           ------
+           |    |
+           |    O
+           |   \\|/
+           |    
+           |    
+        """,
+        """
+           ------
+           |    |
+           |    O
+           |   \\|
+           |    
+           |    
+        """,
+        """
+           ------
+           |    |
+           |    O
+           |    |
+           |    
+           |    
+        """,
+        """
+           ------
+           |    |
+           |    
+           |    
+           |    
+           |    
+        """
+    ]
+    print(states[6 - guesses_left])
+
 def hangman():
     print("Welcome to Hangman!!")
     
@@ -22,7 +83,7 @@ def hangman():
     
     while i > 0:
         print("Current word: " + " ".join(guessed))
-        print("You have " + str(i) + " incorrect guesses left.")
+        show_dude(i)
         
         letter = input("Guess a letter: ").upper()
         
