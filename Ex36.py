@@ -29,6 +29,7 @@ def month_count(dictionary):
     
     return ordered_month_count
 
+#takes the month count dictionary and plots a histogram using Bokeh
 def histogram_make(count):
     months = list(count.keys())
     counts = list(count.values())
