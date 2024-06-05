@@ -1,6 +1,6 @@
-def is_abu(n):
-    divisors_sum = sum(i for i in range(1, n//2 + 1) if n % i == 0)
-    return divisors_sum > n
+def is_abu(num):
+    divisors_sum = sum(i for i in range(1, num//2 + 1) if num % i == 0)
+    return divisors_sum > num
 
 abundant_nums = [i for i in range(12, 28123) if is_abu(i)]
 
